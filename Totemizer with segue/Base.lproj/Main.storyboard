@@ -1,24 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Totemizer_with_segue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bee" translatesAutoresizingMaskIntoConstraints="NO" id="NC9-gq-GhE">
+                                <rect key="frame" x="24" y="200" width="366" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="YR2-Px-5YT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yw9-jB-X4E">
+                                <rect key="frame" x="71" y="549" width="272" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Au3-gM-rUC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show a Spirit Animal">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tra-kW-XAz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NC9-gq-GhE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5gl-g6-H2K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yw9-jB-X4E" secondAttribute="bottom" constant="253" id="ERl-8I-Ciu"/>
+                            <constraint firstItem="yw9-jB-X4E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="Hc4-14-LrD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NC9-gq-GhE" secondAttribute="trailing" constant="24" id="bai-kf-uTH"/>
+                            <constraint firstItem="yw9-jB-X4E" firstAttribute="centerX" secondItem="NC9-gq-GhE" secondAttribute="centerX" id="lGe-YJ-tRS"/>
+                            <constraint firstItem="NC9-gq-GhE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="wbO-dB-beB"/>
+                            <constraint firstItem="NC9-gq-GhE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="xZF-Mr-KGx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ZmM-GB-hpv" kind="show" identifier="showTotem" id="kgb-g7-EiG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="siD-cu-PLK">
+            <objects>
+                <viewController id="ZmM-GB-hpv" customClass="DetailViewController" customModule="Totemizer_with_segue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Jj-uy-WzB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qv-lY-pZT">
+                                <rect key="frame" x="16" y="713" width="382" height="55"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapDetailButton:" destination="ZmM-GB-hpv" eventType="touchUpInside" id="2nT-e0-sZ9"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GhQ-fY-EPj">
+                                <rect key="frame" x="16" y="57" width="382" height="266"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="266" id="V0t-b9-htu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F96-lR-cDg">
+                                <rect key="frame" x="179.5" y="363" width="55" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-oX-qKc">
+                                <rect key="frame" x="20" y="433" width="374" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="WxF-Ch-8e4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7K5-Hb-HDH"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7K5-Hb-HDH" firstAttribute="trailing" secondItem="0qv-lY-pZT" secondAttribute="trailing" constant="16" id="0kl-zs-0p5"/>
+                            <constraint firstItem="GhQ-fY-EPj" firstAttribute="centerX" secondItem="3Jj-uy-WzB" secondAttribute="centerX" id="0v9-Kx-zoY"/>
+                            <constraint firstItem="7K5-Hb-HDH" firstAttribute="trailing" secondItem="GhQ-fY-EPj" secondAttribute="trailing" constant="16" id="6MY-Aq-Ugc"/>
+                            <constraint firstItem="0qv-lY-pZT" firstAttribute="leading" secondItem="7K5-Hb-HDH" secondAttribute="leading" constant="16" id="IMa-Td-sdd"/>
+                            <constraint firstItem="F96-lR-cDg" firstAttribute="centerX" secondItem="3Jj-uy-WzB" secondAttribute="centerX" id="OAt-cp-6XM"/>
+                            <constraint firstItem="GhQ-fY-EPj" firstAttribute="leading" secondItem="7K5-Hb-HDH" secondAttribute="leading" constant="16" id="SFm-bv-1A6"/>
+                            <constraint firstItem="7K5-Hb-HDH" firstAttribute="bottom" secondItem="0qv-lY-pZT" secondAttribute="bottom" constant="40" id="TtQ-Xf-p9I"/>
+                            <constraint firstItem="GhQ-fY-EPj" firstAttribute="top" secondItem="7K5-Hb-HDH" secondAttribute="top" constant="57" id="ZUe-7U-OFb"/>
+                            <constraint firstItem="F96-lR-cDg" firstAttribute="top" secondItem="GhQ-fY-EPj" secondAttribute="bottom" constant="40" id="eMH-2A-iSG"/>
+                            <constraint firstItem="MYT-oX-qKc" firstAttribute="leading" secondItem="7K5-Hb-HDH" secondAttribute="leading" constant="20" id="r9a-wf-0q3"/>
+                            <constraint firstItem="7K5-Hb-HDH" firstAttribute="trailing" secondItem="MYT-oX-qKc" secondAttribute="trailing" constant="20" id="som-i0-rMS"/>
+                            <constraint firstItem="MYT-oX-qKc" firstAttribute="top" secondItem="F96-lR-cDg" secondAttribute="bottom" constant="40" id="xIT-FO-Duu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xuf-Cq-Qpm"/>
+                    <connections>
+                        <outlet property="facts" destination="MYT-oX-qKc" id="8kT-Fk-gnG"/>
+                        <outlet property="totemImage" destination="GhQ-fY-EPj" id="aaX-ab-xYi"/>
+                        <outlet property="totemName" destination="F96-lR-cDg" id="CTr-uk-2PF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmx-ei-Lp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.66666666666674" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bee" width="700" height="475"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

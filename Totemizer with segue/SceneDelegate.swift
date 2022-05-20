@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Totemizer with segue
 //
-//  Created by Zhanagul on 23.04.2022.
+//  Created by Zhanagul Tynysbek on 23.04.2022.
 //
 
 import UIKit

@@ -13,6 +13,8 @@
 		2E1D79D02813D2C80042AE13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D79CE2813D2C80042AE13 /* Main.storyboard */; };
 		2E1D79D22813D2CA0042AE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D79D12813D2CA0042AE13 /* Assets.xcassets */; };
 		2E1D79D52813D2CA0042AE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D79D32813D2CA0042AE13 /* LaunchScreen.storyboard */; };
+		2E1D79DD2813D3000042AE13 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D79DC2813D3000042AE13 /* DetailViewController.swift */; };
+		2E1D79DF2813D9C10042AE13 /* Totems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D79DE2813D9C10042AE13 /* Totems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2E1D79D12813D2CA0042AE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E1D79D42813D2CA0042AE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E1D79D62813D2CA0042AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1D79DC2813D3000042AE13 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2E1D79DE2813D9C10042AE13 /* Totems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Totems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				2E1D79D12813D2CA0042AE13 /* Assets.xcassets */,
 				2E1D79D32813D2CA0042AE13 /* LaunchScreen.storyboard */,
 				2E1D79D62813D2CA0042AE13 /* Info.plist */,
+				2E1D79DC2813D3000042AE13 /* DetailViewController.swift */,
+				2E1D79DE2813D9C10042AE13 /* Totems.swift */,
 			);
 			path = "Totemizer with segue";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				2E1D79CD2813D2C80042AE13 /* ViewController.swift in Sources */,
 				2E1D79C92813D2C80042AE13 /* AppDelegate.swift in Sources */,
 				2E1D79CB2813D2C80042AE13 /* SceneDelegate.swift in Sources */,
+				2E1D79DF2813D9C10042AE13 /* Totems.swift in Sources */,
+				2E1D79DD2813D3000042AE13 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +305,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +334,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
